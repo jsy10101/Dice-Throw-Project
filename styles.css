@@ -24,7 +24,7 @@ button {
     margin: 0 2rem;
 }
 
-.container {
+.container-fluid {
     width: 70%;
     position: absolute;
     background-color: #f8f3eb;
