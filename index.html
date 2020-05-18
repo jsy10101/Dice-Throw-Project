@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Challenge</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="file:///C:/Users/Jaskirat/Downloads/dice-solid.svg">
+    <script src="https://kit.fontawesome.com/bf2f8c12a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Die TOSS tournament</h1>
+      <div class="block">
+        <h2 class="player-1">Player 1</h2>
+        <span><i id="p1" class="fas fa-dice-one"></i></span>
+      </div>
+      <div class="block">
+        <h2 class="player-2">Player 2</h2>
+        <span><i id="p2" class="fas fa-dice-six"></i></span>
+      </div>
+      <div class="tab">
+          <table class="table table-dark">
+              <tr>
+                  <td><strong><em>Person</em></strong></td>
+                  <td><strong><em>Win Counter</em></strong></td>
+              </tr>
+              <tr class="row1">
+                  <td class="player-1">Player 1</td>
+                  <td class="cntr1">0</td>
+              </tr>
+              <tr class="row2">
+                  <td class="player-2">Player 2</td>
+                  <td class="cntr2">0</td>
+              </tr>
+          </table>
+          <button onclick="buttonClickSound(), myFunction()" type="button" name="button" class="btn btn-dark btn-lg">Toss</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" charset="utf-8"></script>
+</html>
