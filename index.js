@@ -58,17 +58,20 @@ function myFunction() {
         }
     }
     else {
+        var celebrationAudio = new Audio("sounds/victoryAudio.mp3");
+        celebrationAudio.play();
 
         if(cntr1 > cntr2) {
             document.querySelector(".row1").classList.add("bg-danger");
-            document.querySelector("h1").innerHTML = "Champion of the raised to " + counterLimit + " Series\n" + player1;
+            document.querySelector("h1").innerHTML = "Champion of the best of " + counterLimit + " dice throw tournament<br>"+ player1.toUpperCase();
         }
         else {
             document.querySelector(".row2").classList.add("bg-danger");
-            document.querySelector("h1").innerHTML = "Champion of the raised to " + counterLimit + " Series\n" + player2;
+            document.querySelector("h1").innerHTML = "Champion of the best of " + counterLimit + " dice throw tournament<br>" + player2.toUpperCase();
         }
-        var celebrationAudio = new Audio("sounds/victoryAudio.mp3");
-        celebrationAudio.play();
+
+        document.querySelector("button").innerHTML = "Refresh to play AGAIN!";
+        document.querySelector("button").setAttribute("onClick", "window.location.reload()");   //add '/' at function end
     }
 }
 
