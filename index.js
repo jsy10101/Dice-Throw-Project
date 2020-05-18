@@ -58,7 +58,7 @@ function myFunction() {
         }
     }
     else {
-        var celebrationAudio = new Audio("sounds/victoryAudio.mp3");
+        var celebrationAudio = new Audio("sounds/yee-jadu-mimic.mp3");
         celebrationAudio.play();
 
         if(cntr1 > cntr2) {
